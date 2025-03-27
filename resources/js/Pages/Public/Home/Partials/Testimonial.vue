@@ -1,12 +1,12 @@
 <template>
-    <section>
+    <section class="bg-brand my-10">
         <div class="max-w-6xl mx-auto px-4 sm:px-6">
-            <div class="py-32">
+            <div class="py-16">
 
                 <div class="relative">
 
                     <!-- Gray box -->
-                    <div class="absolute inset-0 bg-gray-100 rotate-2 -z-10" aria-hidden="true"></div>
+                    
 
                     <!-- Content -->
                     <div class="relative px-6 pb-8 md:px-12 lg:pb-0">
@@ -19,17 +19,17 @@
                                 <div v-for="(item, index) in testimonials" :key="index"
                                     class="swiper-slide space-y-8 lg:flex items-center lg:space-y-0 lg:space-x-8 text-center lg:text-left">
                                     <div class="shrink-0 relative inline-flex">
-                                        <img class="rounded-full" :src="item.image" width="280" height="280"
+                                        <img class="rounded-lg" :src="item.image" width="280" height="280"
                                             alt="Testimonial 01" />
                                         <div class="absolute right-0 bottom-0 mr-4 mb-6">
-                                            <a class="flex items-center font-bold px-3 py-1 bg-white rounded-full shadow-xs"
+                                            <a class="flex items-center font-bold px-3 py-1 bg-white rounded-lg shadow-xs"
                                                 href="#0">
                                                 <span>{{ item.author }}</span>
                                             </a>
                                         </div>
                                     </div>
                                     <div class="relative">
-                                        <h4 class="h3 font-cabinet-grotesk mb-4">{{ item.text }}</h4>
+                                        <h4 class="h3 text-white mb-4">{{ item.text }}</h4>
                                     </div>
                                 </div>
 
