@@ -1,10 +1,10 @@
 <template>
-    <section class="bg-gray-800">
+    <section class="bg-[#202020]">
         <div class="max-w-6xl mx-auto px-4 sm:px-6">
             <div class="py-12 md:py-20">
                 <!-- Section header -->
                 <div class="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-                    <h2 class="h2 font-cabinet-grotesk text-gray-100">Mein Schmuck auf <a href="https://www.cuirma.at/" class="underline">CuirMa.at</a></h2>
+                    <h2 class="h2 font-cabinet-grotesk text-gray-100">Mein Schmuck auf <a href="https://www.cuirma.at/">CuirMa.at</a></h2>
                 </div>
 
                 <!-- Swiper Carousel -->
@@ -31,7 +31,7 @@
                 <!-- Navigation Arrows -->
                 <div class="flex mt-12 space-x-4 justify-end">
                     <button
-                        class="carousel-prev relative z-20 w-14 h-14 rounded-full flex items-center justify-center group bg-gray-700 hover:bg-blue-500 transition duration-150 ease-in-out">
+                        class="carousel-prev relative z-20 w-14 h-14 rounded-full flex items-center justify-center group bg-brand hover:bg-gray-500 transition duration-150 ease-in-out">
                         <span class="sr-only">Previous</span>
                         <svg class="w-4 h-4 fill-gray-400 group-hover:fill-white transition duration-150 ease-in-out"
                             viewBox="0 0 16 16">
@@ -39,7 +39,7 @@
                         </svg>
                     </button>
                     <button
-                        class="carousel-next relative z-20 w-14 h-14 rounded-full flex items-center justify-center group bg-gray-700 hover:bg-blue-500 transition duration-150 ease-in-out">
+                        class="carousel-next relative z-20 w-14 h-14 rounded-full flex items-center justify-center group bg-brand hover:bg-gray-500 transition duration-150 ease-in-out">
                         <span class="sr-only">Next</span>
                         <svg class="w-4 h-4 fill-gray-400 group-hover:fill-white transition duration-150 ease-in-out"
                             viewBox="0 0 16 16">
