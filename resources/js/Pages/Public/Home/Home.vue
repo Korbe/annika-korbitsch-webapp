@@ -4,7 +4,7 @@
             <Hero />
             <LatestArt />
             <JewelryCarousel />
-            <Testimonial />
+            <Inspiration />
             <Faqs />
             <ContactCta />
         </div>
@@ -18,5 +18,6 @@ import JewelryCarousel from './Partials/JewelryCarousel.vue';
 import Testimonial from './Partials/Testimonial.vue';
 import Faqs from './Partials/Faqs.vue';
 import ContactCta from '@/Components/ContactCta.vue';
+import Inspiration from './Partials/Inspiration.vue';
 
 </script>
