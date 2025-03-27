@@ -17,7 +17,7 @@
             <li class="ml-4">
               <a
                 class="flex justify-center items-center text-brand bg-gray-100 hover:text-red-500 hover:bg-brand-500 rounded-full transition duration-150 ease-in-out"
-                :href="contact.facebook" target="_blank" aria-label="Facebook">
+                :href="contact.instagram" target="_blank" aria-label="Facebook">
                 <i class="fa-brands fa-instagram text-3xl"></i>
             </a>
             </li>

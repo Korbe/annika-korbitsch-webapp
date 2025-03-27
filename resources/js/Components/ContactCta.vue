@@ -26,9 +26,9 @@
                 </a>
             </div>
             <div class="flex">
-                <a :href="contact.webshop"
+                <a :href="contact.webshop" target="_blank"
                     class="group flex text-sm font-medium text-brand-headline transition hover:text-brand dark:text-brand-headline-dark">
-                    <i class="text-2xl fa-solid fa-phone h-6 w-6 flex-none transition group-hover:text-brand"></i>
+                    <i class="text-2xl fa-solid fa-earth-europe h-6 w-6 flex-none transition group-hover:text-brand"></i>
                     <span class="ml-4">{{ contact.webshop_short }}</span>
                 </a>
             </div>

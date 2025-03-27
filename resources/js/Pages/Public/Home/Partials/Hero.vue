@@ -14,7 +14,7 @@
           <div class="md:w-[640px]">
             <!-- Copy -->
             <h1 class="h1 font-cabinet-grotesk mb-6" data-aos="fade-right" data-aos-delay="100">Annika <span
-                class="relative inline-flex text-blue-500">
+                class="relative inline-flex text-brand">
                 Korbitsch
               </span>.</h1>
             <p class="text-xl text-gray-500 mb-10" data-aos="fade-right" data-aos-delay="200">Kunst ist der Anker, der
@@ -25,13 +25,13 @@
               class="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4 mb-12 md:mb-20"
               data-aos="fade-right" data-aos-delay="300">
               <div>
-                <Link class="btn text-white bg-blue-500 hover:bg-blue-600 w-full shadow-xs" href="/about">Über mich
+                <Link class="btn text-white bg-brand hover:bg-gray-500 w-full shadow-xs" href="/about">Über mich
                 </Link>
               </div>
               <div>
-                <Link class="btn text-gray-600 bg-white hover:bg-blue-100 hover:text-blue-600 w-full shadow-xs"
-                  href="/contact">Kontakt
-                </Link>
+                <a class="btn text-brand bg-white hover:bg-gray-200 w-full shadow-xs"
+                  href="https://www.cuirma.at/" target="_blank">Cuir Ma
+              </a>
               </div>
             </div>
             <!-- Stats -->

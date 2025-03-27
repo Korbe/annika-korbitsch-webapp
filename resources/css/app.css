@@ -15,7 +15,8 @@ layer(base);
 
 @theme {
     --font-inter: Inter, sans-serif;
-    --font-cabinet-grotesk: Cabinet Grotesk, sans-serif;
+    --color-brand: #4a5565;
+   
   
     --text-xs: 0.75rem;
     --text-xs--line-height: 1.5;
@@ -59,4 +60,8 @@ layer(base);
 
 [x-cloak] {
     display: none;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #4a5565 !important;
 }

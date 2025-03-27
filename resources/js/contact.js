@@ -10,5 +10,7 @@ export default {
   address: 'Moorhofstraße 6',
   city: 'Reichenfels',
   zipCode: 9463,
-  country: 'Österreich'
+  country: 'Österreich',
+  facebook: 'https://www.facebook.com/annika.korbitsch',
+  instagram: 'https://www.instagram.com/annikakorbitsch'
 };
