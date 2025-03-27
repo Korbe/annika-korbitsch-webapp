@@ -56,11 +56,14 @@
                     </div>
                 </div>
             </div>
+
+            <ContactCta />
         </div>
     </PublicLayout>
 </template>
 
 <script setup>
+import ContactCta from '@/Components/ContactCta.vue';
 import PublicLayout from '@/Layouts/Public/PublicLayout.vue';
 import { ref } from 'vue';
 import VueEasyLightbox from 'vue-easy-lightbox';
