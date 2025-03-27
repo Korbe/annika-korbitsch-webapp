@@ -29,9 +29,9 @@
                 </Link>
               </div>
               <div>
-                <a class="btn text-brand bg-white hover:bg-gray-200 w-full shadow-xs"
-                  href="https://www.cuirma.at/" target="_blank">Cuir Ma
-              </a>
+                <a class="btn text-brand bg-white hover:bg-gray-200 w-full shadow-xs" href="https://www.cuirma.at/"
+                  target="_blank">Cuir Ma
+                </a>
               </div>
             </div>
             <!-- Stats -->
@@ -63,11 +63,12 @@
 
           <!-- Image -->
           <div
-            class="max-w-sm mx-auto md:max-w-none md:absolute md:left-[40rem] md:ml-16 lg:ml-32 xl:ml-52 mt-12 md:-mt-12"
+            class="max-w-sm mx-auto md:max-w-none md:absolute md:left-[40rem] md:ml-16 lg:ml-32 xl:ml-52 mt-12 md:-mt-12 relative"
             data-aos="fade-left" data-aos-duration="1100">
             <img src="/images/hero-image.png" class="md:max-w-none" width="584" height="659" />
+            <!-- Gradient Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent to-white"></div>
           </div>
-
         </div>
 
       </div>

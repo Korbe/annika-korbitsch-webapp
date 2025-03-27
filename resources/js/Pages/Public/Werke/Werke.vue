@@ -27,7 +27,7 @@
                                     <div @click="openLightbox(index)" v-for="(item, index) in inspirations" :key="index"
                                         class="cursor-pointer relative group hover:shadow-xl transition duration-150 ease-in-out"
                                         href="#0" data-aos="fade-down" data-aos-anchor="[data-aos-id-inpspiration]">
-                                        <img class="w-full aspect-square object-cover" :src="item.image" width="352"
+                                        <img class="w-full aspect-square object-cover rounded-lg" :src="item.image" width="352"
                                             height="352" :alt="item.name" />
                                         <!-- Content on hover -->
                                         <div
@@ -72,15 +72,15 @@ const isLightboxOpen = ref(false);
 const currentImageIndex = ref(0);
 
 const inspirations = ref([
-    { image: '/images/latest/inspiration-01.jpg', name: 'Inspiration 01' },
-    { image: '/images/latest/inspiration-02.jpg', name: 'Inspiration 02' },
-    { image: '/images/latest/inspiration-03.jpg', name: 'Inspiration 03' },
-    { image: '/images/latest/inspiration-04.jpg', name: 'Inspiration 04' },
-    { image: '/images/latest/inspiration-05.jpg', name: 'Inspiration 05' },
-    { image: '/images/latest/inspiration-06.jpg', name: 'Inspiration 06' },
-    { image: '/images/latest/inspiration-04.jpg', name: 'Inspiration 04' },
-    { image: '/images/latest/inspiration-05.jpg', name: 'Inspiration 05' },
-    { image: '/images/latest/inspiration-06.jpg', name: 'Inspiration 06' }
+    { image: '/images/latest/1.jpg', name: 'Inspiration 01' },
+    { image: '/images/latest/2.jpg', name: 'Inspiration 02' },
+    { image: '/images/latest/3.jpg', name: 'Inspiration 03' },
+    { image: '/images/latest/4.jpg', name: 'Inspiration 04' },
+    { image: '/images/latest/5.jpg', name: 'Inspiration 05' },
+    { image: '/images/latest/6.jpg', name: 'Inspiration 06' },
+    { image: '/images/latest/7.jpg', name: 'Inspiration 04' },
+    { image: '/images/latest/8.jpg', name: 'Inspiration 05' },
+    { image: '/images/latest/9.jpg', name: 'Inspiration 06' }
 ]);
 
 const openLightbox = (index) => {

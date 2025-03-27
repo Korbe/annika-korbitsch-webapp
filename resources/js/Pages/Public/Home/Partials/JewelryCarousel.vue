@@ -22,7 +22,6 @@
                                     href="#0">
                                     {{ item.title }}
                                 </a>
-                                <div class="text-sm text-gray-500 italic">{{ item.collections }} collections</div>
                             </div>
                         </div>
                     </div>
@@ -63,44 +62,36 @@ Swiper.use([Navigation]);
 // Liste mit Carousel Items
 const carouselItems = ref([
     {
-        title: 'Digital Art',
-        image: '/images/carousel/carousel-01.jpg',
-        collections: 34,
+        title: 'Kleine Achatkugel in Kupfer',
+        image: '/images/jewelery/1.jpg',
     },
     {
-        title: 'Gradients',
-        image: '/images/carousel/carousel-02.jpg',
-        collections: 129,
+        title: 'Shiva Auge mit nachtleuchtender Einlage',
+        image: '/images/jewelery/2.jpg',
     },
     {
-        title: 'Liquid 3D',
-        image: '/images/carousel/carousel-03.jpg',
-        collections: 49,
+        title: 'Armband mit gepresster Pflanze',
+        image: '/images/jewelery/3.jpg',
     },
     {
-        title: 'Abstraction',
-        image: '/images/carousel/carousel-04.jpg',
-        collections: 24,
+        title: 'Armkettchen mit gepresster Pflanze',
+        image: '/images/jewelery/4.jpg',
     },
     {
-        title: 'Landscapes',
-        image: '/images/carousel/carousel-05.jpg',
-        collections: 27,
+        title: 'Brosche mit Pflanze',
+        image: '/images/jewelery/5.jpg',
     },
     {
-        title: 'Pastel',
-        image: '/images/carousel/carousel-06.jpg',
-        collections: 22,
+        title: 'Schmuckset mit gepressten Pflanzen',
+        image: '/images/jewelery/6.jpg',
     },
     {
-        title: 'Dark 3D',
-        image: '/images/carousel/carousel-07.jpg',
-        collections: 112,
+        title: 'Schmuckset mit Original Gemälde (Gradient blue)',
+        image: '/images/jewelery/7.jpg',
     },
     {
-        title: 'Baroque',
-        image: '/images/carousel/carousel-08.jpg',
-        collections: 77,
+        title: 'Schmuckset Freiheit spüren',
+        image: '/images/jewelery/8.jpg',
     },
 ]);
 
