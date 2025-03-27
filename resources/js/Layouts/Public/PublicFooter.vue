@@ -40,6 +40,8 @@
         </div>
 
         <div class="mt-12 border-t border-gray-200 pt-8">
+
+          <img src="images/footer.jpg" class="rounded-lg h-50 mx-auto mb-10" />
           <Credit />
           <p class="pt-4 text-base text-gray-500 xl:text-center"> © {{ new Date().getFullYear() }} Annika Korbitsch. Alle
             Rechte vorbehalten </p>
