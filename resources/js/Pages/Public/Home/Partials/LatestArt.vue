@@ -21,10 +21,10 @@
                             data-aos-id-inpspiration>
 
 
-                            <div @click="openLightbox(index)" v-for="(item, index) in inspirations" :key="index"
+                            <div @click="openLightbox(index)" v-for="(item, index) in galleries" :key="index"
                                 class="cursor-pointer relative group hover:shadow-xl transition duration-150 ease-in-out" href="#0"
                                 data-aos="fade-down" data-aos-anchor="[data-aos-id-inpspiration]">
-                                <img class="w-full aspect-square object-cover rounded-lg" :src="item.image" width="352"
+                                <img class="w-full aspect-square object-cover rounded-lg" :src="item.media[0]?.original_url" width="352"
                                     height="352" :alt="item.name" />
                                 <!-- Content on hover -->
                                 <div class="md:hidden md:group-hover:block absolute bottom-0 left-0 right-0 p-4">
@@ -70,54 +70,18 @@
 import { ref } from 'vue';
 import VueEasyLightbox from 'vue-easy-lightbox';
 
+defineProps({
+    galleries: Array,
+});
+
 const isLightboxOpen = ref(false);
 const currentImageIndex = ref(0);
-
-const inspirations = ref([
-    {
-        image: '/images/latest/1.jpg',
-        name: 'Inspiration 01',
-    },
-    {
-        image: '/images/latest/2.jpg',
-        name: 'Inspiration 02',
-    },
-    {
-        image: '/images/latest/3.jpg',
-        name: 'Inspiration 03',
-    },
-    {
-        image: '/images/latest/4.jpg',
-        name: 'Inspiration 04',
-    },
-    {
-        image: '/images/latest/5.jpg',
-        name: 'Inspiration 05',
-    },
-    {
-        image: '/images/latest/6.jpg',
-        name: 'Inspiration 06',
-    },
-    // {
-    //     image: '/images/latest/inspiration-04.jpg',
-    //     name: 'Inspiration 04',
-    // },
-    // {
-    //     image: '/images/latest/inspiration-05.jpg',
-    //     name: 'Inspiration 05',
-    // },
-    // {
-    //     image: '/images/latest/inspiration-06.jpg',
-    //     name: 'Inspiration 06',
-    // }
-]);
 
 const openLightbox = (index) => {
     currentImageIndex.value = index;
     isLightboxOpen.value = true;
 };
 
-// Methode zum Schließen der Lightbox
 const closeLightbox = () => {
     isLightboxOpen.value = false;
 };

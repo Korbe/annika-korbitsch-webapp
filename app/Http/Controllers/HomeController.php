@@ -3,12 +3,17 @@
 namespace App\Http\Controllers;
 
 use Inertia\Inertia;
+use App\Models\Gallery;
+use App\Models\Jewelry;
 
 class HomeController extends Controller
 {
     public function home()
     {
-        return Inertia::render('Public/Home/Home');
+        return Inertia::render('Public/Home/Home', [
+            "galleries" => Gallery::with('media')->latest()->take(6)->get(),
+            "jewelries" => Jewelry::with('media')->latest()->get()
+        ]);
     }
 
     public function about()
@@ -16,9 +21,11 @@ class HomeController extends Controller
         return Inertia::render('Public/About/About');
     }
 
-    public function portfolio()
+    public function werke()
     {
-        return Inertia::render('Public/Werke/Werke');
+        return Inertia::render('Public/Werke/Werke', [
+            "galleries" => Gallery::with('media')->latest()->get(),
+        ]);
     }
 
     public function imprint()
