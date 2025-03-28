@@ -1,5 +1,5 @@
 <template>
-    <div class="max-w-4xl mx-auto text-center mt-20">
+    <div data-aos="fade-down" class="max-w-4xl mx-auto text-center mt-20 px-5">
         <h2 class="text-2xl font-bold tracking-tight text-brand-headline sm:text-3xl my-3">
             Du hättest gern ein selbst gemaltes Bild, Schmuck oder hast Fragen zu meinen Arbeiten?
         </h2>

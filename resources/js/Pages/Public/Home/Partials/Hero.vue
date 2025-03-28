@@ -11,7 +11,7 @@
         <div class="relative max-w-xl mx-auto md:max-w-none text-center md:text-left flex flex-col md:flex-row">
 
           <!-- Content -->
-          <div class="md:w-[640px]">
+          <div class="md:w-[640px] px-5 lg:p-0">
             <!-- Copy -->
             <h1 class="h1 font-cabinet-grotesk mb-6" data-aos="fade-right" data-aos-delay="100">Annika <span
                 class="relative inline-flex text-brand">

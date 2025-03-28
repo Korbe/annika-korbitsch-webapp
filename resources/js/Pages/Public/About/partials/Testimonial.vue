@@ -1,5 +1,5 @@
 <template>
-    <section class="bg-brand my-10">
+    <section data-aos="fade-down" class="bg-[#202020] my-10">
         <div class="max-w-6xl mx-auto px-4 sm:px-6">
             <div class="py-16">
 

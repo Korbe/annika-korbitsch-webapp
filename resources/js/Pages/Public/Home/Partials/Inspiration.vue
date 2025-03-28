@@ -1,5 +1,5 @@
 <template>
-    <div class="container text-brand flex flex-col lg:flex-row max-w-6xl items-center justify-center mx-auto py-24 text-lg">
+    <div data-aos="fade-down" class="container text-brand flex flex-col lg:flex-row max-w-6xl items-center justify-center mx-auto py-24 text-lg">
         <img src="/images/inspiration.jpg" class="rounded-lg h-[500px] m-10" />
         <div>
             <p class="px-10">Wenn ich male, relativiert sich mein Verständnis von Zeit. Ich gestalte jedes Detail und jedes Detail hat

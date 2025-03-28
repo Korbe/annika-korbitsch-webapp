@@ -3,9 +3,10 @@
         <div class="bg-gradient-to-b from-gray-50 to-white">
             <div class="mx-auto max-w-6xl py-16 flex flex-col lg:flex-row justify-center items-center lg:space-x-7">
 
-                <img src="images/me.jpg" class="rounded-lg max-h-[500px] lg:max-h-[800px]" />
-
-                <div class="px-7 space-y-4 max-w-2xl text-brand">
+                <div data-aos="fade-right" class="px-10">
+                    <img src="images/me.jpg" class=" rounded-lg max-h-[500px] lg:max-h-[800px]" />
+                </div>
+                <div data-aos="fade-left" class="px-7 space-y-4 max-w-2xl text-brand">
 
                     <h1 class="text-4xl text-black font-bold tracking-tight py-5 sm:text-5xl"> Ich bin Annika
                         Korbitsch. Aus dem Lavanttal, male und gestalte Schmuck. </h1>
@@ -46,6 +47,6 @@
 <script setup>
 import ContactCta from '@/Components/ContactCta.vue';
 import PublicLayout from '@/Layouts/Public/PublicLayout.vue';
-import Testimonial from '../Home/Partials/Testimonial.vue';
+import Testimonial from './partials/Testimonial.vue';
 
 </script>

@@ -1,5 +1,5 @@
 <template>
-    <div class="mx-auto max-w-4xl py-12">
+    <div data-aos="fade-down" class="mx-auto max-w-4xl py-12 px-5">
         <h2 class="text-4xl font-semibold tracking-tight text-brand-headline sm:text-3xl dark:text-brand-headline-dark">Häufig gestellte Fragen</h2>
         <dl class="my-12 divide-y divide-gray-900/10">
             <Disclosure as="div" v-for="(faq, index) in faqs" :key="faq.question" class="py-6 first:pt-0 last:pb-0"
