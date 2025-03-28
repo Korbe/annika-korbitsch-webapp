@@ -1,7 +1,7 @@
 <template>
     <div
         v-if="showBanner"
-        class="fixed bottom-0 left-0 w-full bg-white dark:bg-zinc-900 text-brand-text dark:text-brand-text-dark p-4 flex justify-between items-center z-10"
+        class="fixed bottom-0 left-0 w-full border-t border-gray-300 bg-white dark:bg-zinc-900 text-brand-text dark:text-brand-text-dark p-4 flex justify-between items-center z-10"
     >
         <p>
             Mit dem Besuch dieser Website stimmst du der Verwendung von Cookies
