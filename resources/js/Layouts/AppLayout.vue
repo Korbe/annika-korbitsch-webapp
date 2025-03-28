@@ -42,8 +42,8 @@ const logout = () => {
                         <div class="flex">
                             <!-- Logo -->
                             <div class="shrink-0 flex items-center">
-                                <Link :href="route('dashboard.home')">
-                                <ApplicationMark class="block h-9 w-auto" />
+                                <Link :href="route('public.home')">
+                                    Annika Korbitsch
                                 </Link>
                             </div>
 
