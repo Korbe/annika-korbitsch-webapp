@@ -30,7 +30,7 @@
             <Link class="text-gray-500 decoration-brand decoration-2 underline-offset-2 hover:underline"
               href="about">Über mich</Link>
               <Link class="text-gray-500 decoration-brand decoration-2 underline-offset-2 hover:underline"
-              href="werke">Meine Werke</Link>
+              href="werke">Werke</Link>
             <Link class="text-gray-500 decoration-brand decoration-2 underline-offset-2 hover:underline"
               href="impressum">Impressum</Link>
             <Link class="text-gray-500 decoration-brand decoration-2 underline-offset-2 hover:underline"
@@ -41,7 +41,7 @@
 
         <div class="mt-12 border-t border-gray-200 pt-8">
 
-          <img src="images/footer.jpg" class="rounded-lg h-50 mx-auto mb-10" />
+          <img src="images/footer.jpg" class="rounded-lg h-50 mx-auto mb-10 object-cover" />
           <Credit />
           <p class="pt-4 text-base text-gray-500 xl:text-center"> © {{ new Date().getFullYear() }} Annika Korbitsch. Alle
             Rechte vorbehalten </p>

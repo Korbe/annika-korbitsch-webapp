@@ -24,7 +24,7 @@
             <li>
               <Link
                 class="font-medium text-gray-600 decoration-brand decoration-2 underline-offset-2 hover:underline px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
-                href="/werke">Meine Werke</Link>
+                href="/werke">Werke</Link>
             </li>
           </ul>
         </nav>
