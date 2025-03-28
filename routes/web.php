@@ -2,28 +2,15 @@
 
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\Http\Controllers\HomeController;
 
-Route::get('/', function () {
-    return Inertia::render('Public/Home/Home');
-})->name("public.home");
-
-Route::get('/about', function () {
-    return Inertia::render('Public/About/About');
-})->name("public.about");
-
-Route::get('/werke', function () {
-    return Inertia::render('Public/Werke/Werke');
-})->name("public.portfolio");
-
-Route::get('/impressum', function () {
-    return Inertia::render('Public/Legal/Impressum');
-})->name("public.imprint");
-
-Route::get('/cookies', function () {
-    return Inertia::render('Public/Legal/Cookies');
-})->name("public.cookies");
-
-
+Route::name('public.')->group(function () {
+    Route::get('/', [HomeController::class, 'home'])->name("home");
+    Route::get('/about', [HomeController::class, 'about'])->name("about");
+    Route::get('/werke', [HomeController::class, 'werke'])->name("werke");
+    Route::get('/impressum', [HomeController::class, 'impressum'])->name("impressum");
+    Route::get('/cookies', [HomeController::class, 'cookies'])->name("cookies");
+});
 
 
 Route::middleware([
