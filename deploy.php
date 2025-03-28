@@ -28,11 +28,12 @@ task('npm:build', function () {
 });
 
 task('fpm:restart', function () {
-    run('systemctl restart php8.3-fpm');
+    run('sudo systemctl restart php8.3-fpm');
 });
 
 after('deploy:vendors', 'npm:install');
 after('npm:install', 'npm:build');
+after('deploy:success', 'fpm:restart');
 
 after('deploy:setup', 'deploy:unlock');
 after('deploy:failed', 'deploy:unlock');
