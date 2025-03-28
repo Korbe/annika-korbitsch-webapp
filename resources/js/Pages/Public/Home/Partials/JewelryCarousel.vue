@@ -10,11 +10,11 @@
                 <!-- Swiper Carousel -->
                 <div class="carousel swiper-container max-w-sm mx-auto sm:max-w-none">
                     <div class="swiper-wrapper">
-                        <a v-for="(item, index) in carouselItems" :key="index" :href="item.link" target="_blank"
+                        <a v-for="(item, index) in jewelries" :key="index" :href="item.link" target="_blank"
                             class="swiper-slide h-auto flex flex-col transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-lg">
 
                             <!-- Image -->
-                            <img class="w-full aspect-4/3 object-cover" :src="item.image" :alt="item.title" />
+                            <img class="w-full aspect-4/3 object-cover" :src="item.media[0]?.original_url" :alt="item.title" />
 
                             <!-- White box mit fester Höhe für Konsistenz -->
                             <div class="grow bg-white px-4 pb-6 flex flex-col">
@@ -57,54 +57,12 @@ import { onMounted, ref } from 'vue';
 import Swiper, { Navigation } from 'swiper';
 import 'swiper/css';
 
-// Swiper-Module aktivieren
 Swiper.use([Navigation]);
 
-// Liste mit Carousel Items
-const carouselItems = ref([
-    {
-        title: 'Kleine Achatkugel in Kupfer',
-        image: '/images/jewelery/1.jpg',
-        link: 'https://www.cuirma.at/steinschmuck/#cc-m-product-7170880813',
-    },
-    {
-        title: 'Shiva Auge mit nachtleuchtender Einlage',
-        image: '/images/jewelery/2.jpg',
-        link: 'https://www.cuirma.at/steinschmuck/#cc-m-product-7170880813',
-    },
-    {
-        title: 'Armband mit gepresster Pflanze',
-        image: '/images/jewelery/3.jpg',
-        link: 'https://www.cuirma.at/steinschmuck/#cc-m-product-7170880813',
-    },
-    {
-        title: 'Armkettchen mit gepresster Pflanze',
-        image: '/images/jewelery/4.jpg',
-        link: 'https://www.cuirma.at/steinschmuck/#cc-m-product-7170880813',
-    },
-    {
-        title: 'Brosche mit Pflanze',
-        image: '/images/jewelery/5.jpg',
-        link: 'https://www.cuirma.at/steinschmuck/#cc-m-product-7170880813',
-    },
-    {
-        title: 'Schmuckset mit gepressten Pflanzen',
-        image: '/images/jewelery/6.jpg',
-        link: 'https://www.cuirma.at/steinschmuck/#cc-m-product-7170880813',
-    },
-    {
-        title: 'Schmuckset mit Original Gemälde (Gradient blue)',
-        image: '/images/jewelery/7.jpg',
-        link: 'https://www.cuirma.at/steinschmuck/#cc-m-product-7170880813',
-    },
-    {
-        title: 'Schmuckset Freiheit spüren',
-        image: '/images/jewelery/8.jpg',
-        link: 'https://www.cuirma.at/steinschmuck/#cc-m-product-7170880813',
-    },
-]);
+defineProps({
+    jewelries: Array,
+});
 
-// Swiper initialisieren
 onMounted(() => {
     new Swiper('.carousel', {
         breakpoints: {

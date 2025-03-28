@@ -2,7 +2,7 @@
     <PublicLayout title="Home">
         <Hero />
         <LatestArt />
-        <JewelryCarousel />
+        <JewelryCarousel :jewelries="jewelries" />
         <Inspiration />
         <Faqs />
         <ContactCta />
@@ -18,4 +18,7 @@ import Faqs from './Partials/Faqs.vue';
 import ContactCta from '@/Components/ContactCta.vue';
 import Inspiration from './Partials/Inspiration.vue';
 
+defineProps({
+    jewelries: Array
+});
 </script>
